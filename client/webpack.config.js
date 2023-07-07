@@ -21,12 +21,12 @@ module.exports = () => {
     plugins: [
       new HtmlWebpackPlugin({
         template: "./index.html",
-        title: "Webpack Plugin",
+        title: "JATE",
       }),
       // new MiniCssExtractPlugin(),
       new InjectManifest({
-        swSrc: "./src/src-sw.js",
-        swDest: "service-worker.js",
+        swSrc: "./src-sw.js",
+        swDest: "src-sw.js",
       }),
       new WebpackPwaManifest({
         name: "Text Editor",
